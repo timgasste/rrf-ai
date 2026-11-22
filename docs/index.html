@@ -115,8 +115,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#workflow-3" id="toc-workflow-3" class="nav-link" data-scroll-target="#workflow-3">3. Feedback on one paragraph of your own text</a></li>
   <li><a href="#workflow-4" id="toc-workflow-4" class="nav-link" data-scroll-target="#workflow-4">4. More advanced: your own literature matrix, with AI</a></li>
   <li><a href="#take-home" id="toc-take-home" class="nav-link" data-scroll-target="#take-home">Your workflow description</a></li>
-  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">The tools</a></li>
-  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
   <li><a href="#rule" id="toc-rule" class="nav-link" data-scroll-target="#rule">AI guidelines</a></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   </ul>
@@ -157,7 +155,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Tim Gåsste · Reviewing a Research Field (2FK052) · Uppsala University</p>
 </div>
 <div class="jump">
-<p><a href="#workflow-1" class="primary">Workflow 1</a> <a href="#workflow-2">Workflow 2</a> <a href="#workflow-3">Workflow 3</a> <a href="#workflow-4">Workflow 4</a> <a href="#tools">Tools</a> <a href="#downloads">Downloads</a> <a href="#rule">AI guidelines</a> <a href="#slides">Slides</a></p>
+<p><a href="#workflow-1" class="primary">Workflow 1</a> <a href="#workflow-2">Workflow 2</a> <a href="#workflow-3">Workflow 3</a> <a href="#workflow-4">Workflow 4</a> <a href="#rule">AI guidelines</a> <a href="#slides">Slides</a></p>
 </div>
 </section>
 </div>
@@ -176,7 +174,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li>Copy prompt A and replace each [bracket] with your own words.</li>
 <li>Paste it into <a href="https://m365.cloud.microsoft/chat">Copilot</a> (log in with your UU student account) or into the chat tool you use.</li>
-<li>Pick the works that look useful for your question. Search each title in <a href="#scholar">Google Scholar</a>: does the work exist as the answer says? Write down its “Cited by” number.</li>
+<li>Pick the works that look useful for your question. Search each title in <a href="https://scholar.google.com">Google Scholar</a>: does the work exist as the answer says? Write down its “Cited by” number.</li>
 <li>Drop every work you cannot find. Keep the checked works for your reading list.</li>
 </ol>
 </div>
@@ -203,7 +201,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="workflow-2" class="level2">
 <h2 class="anchored" data-anchor-id="workflow-2">2. See how the works connect, in Litmaps</h2>
 <div class="need">
-<p><strong>You need:</strong> a free <a href="#litmaps">Litmaps</a> account, and 2 or 3 works you know or have checked.</p>
+<p><strong>You need:</strong> a free Litmaps account (sign up with your email or Google), and 2 or 3 works you know or have checked.</p>
 </div>
 <div class="steps">
 <ol type="1">
@@ -255,10 +253,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li>Copy prompt B and replace the two [brackets] with your references and your notes.</li>
 <li>Run it in <a href="https://m365.cloud.microsoft/chat">Copilot</a>.</li>
-<li>Select the table in the answer, copy it, and paste it into an empty sheet in Excel or Google Sheets. Empty cells show what you still need to read for. If everything lands in one column, ask me.</li>
+<li>Select the table in the answer, copy it, and paste it into an empty sheet in Excel or Google Sheets. If everything lands in one column, ask me.</li>
+<li>Sort by Year and filter by Strand to compare the works. Empty cells show what you still need to read for.</li>
 <li>Write My assessment and Relevance to my question yourself.</li>
 </ol>
 </div>
+<p>The matrix is your working file. The text and tables in your review you write and build yourself.</p>
 <section id="prompt-b" class="level3 unlisted">
 <h3 class="unlisted anchored" data-anchor-id="prompt-b">Prompt B: from a list to a matrix</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Turn my references and notes below into a table for a literature matrix.</span>
@@ -284,53 +284,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The course asks you to state which AI tools you used and what for, or that you used none. An example:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>I used <span class="co">[</span><span class="ot">chat tool</span><span class="co">]</span> to get an overview of the sub-field and a first list of candidate works, checked each work and its citation count in Google Scholar, and used <span class="co">[</span><span class="ot">map tool</span><span class="co">]</span> to see how the works connect. I read every work in this review myself. I used <span class="co">[</span><span class="ot">chat tool</span><span class="co">]</span> to turn my notes into a table and to get questions on one paragraph of my description, and I wrote all changes myself.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Change it so it says what you actually did.</p>
-</section>
-<section id="tools" class="level2">
-<h2 class="anchored" data-anchor-id="tools">The tools</h2>
-<p>Three kinds of tool, three jobs: a chat tool for scoping the field, a citation database for confirming your references, and a map tool for how the works connect. Then Excel or Google Sheets for your literature matrix.</p>
-<div class="basics">
-<div id="copilot" class="basic">
-<section id="chat-copilot-at-uu" class="level4">
-<h4 class="anchored" data-anchor-id="chat-copilot-at-uu"><span>Chat</span> Copilot at UU</h4>
-<p>“Students at Uppsala University have free access to the AI tool Copilot.” Log in with your UU student account at <a href="https://m365.cloud.microsoft/chat">m365.cloud.microsoft/chat</a>.</p>
-<p>Do not enter sensitive or confidential information, or personal details.</p>
-<p><a href="https://www.uu.se/en/students/it-for-students/software/ai-tool">UU: the AI tool for students</a></p>
-</section>
-</div>
-<div id="scholar" class="basic">
-<section id="check-google-scholar" class="level4">
-<h4 class="anchored" data-anchor-id="check-google-scholar"><span>Check</span> Google Scholar</h4>
-<p>Free. Search for the title and see whether the work exists as the chat answer says. <strong>Cited by</strong> under each result gives its citation count. <strong>Cite</strong> shows the reference, ready to copy, for example into prompt B.</p>
-<p><a href="https://scholar.google.com">scholar.google.com</a></p>
-</section>
-</div>
-<div id="litmaps" class="basic">
-<section id="map-litmaps" class="level4">
-<h4 class="anchored" data-anchor-id="map-litmaps"><span>Map</span> Litmaps</h4>
-<p>Draws a map of how works cite each other, from 2 or 3 seed works. Make a <strong>free account</strong> (email, or Sign Up with Google). The free plan allows only one or two maps, so use one map.</p>
-<p><a href="https://app.litmaps.com/">app.litmaps.com</a></p>
-</section>
-</div>
-<div id="excel" class="basic">
-<section id="sort-excel-or-google-sheets" class="level4">
-<h4 class="anchored" data-anchor-id="sort-excel-or-google-sheets"><span>Sort</span> Excel or Google Sheets</h4>
-<p>Paste the table from Copilot into an empty sheet. Then sort by Year (Excel: Data, Sort) and filter by Strand or Method (Excel: Data, Filter) to compare the works. Google Sheets: Data, Sort range, and Data, Create a filter.</p>
-</section>
-</div>
-</div>
-</section>
-<section id="downloads" class="level2">
-<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
-<div class="download">
-<p><strong>Literature matrix template</strong> (Excel). The columns, filters on, and a sheet “How to use”.</p>
-<p><a href="downloads/literature-matrix-template.xlsx" class="button">Download .xlsx</a></p>
-</div>
-<div class="download">
-<p><strong>Example matrix: criminal governance</strong> (Excel). The demo topic, with eight real works filled in. My assessment and Relevance to my question stay empty, because those are yours.</p>
-<p><a href="downloads/literature-matrix-criminal-governance.xlsx" class="button">Download example</a></p>
-</div>
-<p>The colours in the Excel files show who fills each column. Blue: the reference. Green: from your own notes, in your words. Orange: yours only, never AI.</p>
-<p>The matrix is your working file. The text and tables in your review you write and build yourself.</p>
 </section>
 <section id="rule" class="level2">
 <h2 class="anchored" data-anchor-id="rule">AI guidelines</h2>

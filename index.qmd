@@ -19,7 +19,7 @@ Tim Gåsste · Reviewing a Research Field (2FK052) · Uppsala University
 :::
 
 ::: {.jump}
-[Workflow 1](#workflow-1){.primary} [Workflow 2](#workflow-2) [Workflow 3](#workflow-3) [Workflow 4](#workflow-4) [Tools](#tools) [Downloads](#downloads) [AI guidelines](#rule) [Slides](#slides)
+[Workflow 1](#workflow-1){.primary} [Workflow 2](#workflow-2) [Workflow 3](#workflow-3) [Workflow 4](#workflow-4) [AI guidelines](#rule) [Slides](#slides)
 :::
 :::
 
@@ -40,7 +40,7 @@ Tim Gåsste · Reviewing a Research Field (2FK052) · Uppsala University
 ::: {.steps}
 1. Copy prompt A and replace each [bracket] with your own words.
 2. Paste it into [Copilot](https://m365.cloud.microsoft/chat) (log in with your UU student account) or into the chat tool you use.
-3. Pick the works that look useful for your question. Search each title in [Google Scholar](#scholar): does the work exist as the answer says? Write down its "Cited by" number.
+3. Pick the works that look useful for your question. Search each title in [Google Scholar](https://scholar.google.com): does the work exist as the answer says? Write down its "Cited by" number.
 4. Drop every work you cannot find. Keep the checked works for your reading list.
 :::
 
@@ -68,7 +68,7 @@ Rules:
 ## 2. See how the works connect, in Litmaps {#workflow-2}
 
 ::: {.need}
-**You need:** a free [Litmaps](#litmaps) account, and 2 or 3 works you know or have checked.
+**You need:** a free Litmaps account (sign up with your email or Google), and 2 or 3 works you know or have checked.
 :::
 
 ::: {.steps}
@@ -123,9 +123,12 @@ Done with workflows 1 to 3? Use AI to turn your own notes into a literature matr
 ::: {.steps}
 1. Copy prompt B and replace the two [brackets] with your references and your notes.
 2. Run it in [Copilot](https://m365.cloud.microsoft/chat).
-3. Select the table in the answer, copy it, and paste it into an empty sheet in Excel or Google Sheets. Empty cells show what you still need to read for. If everything lands in one column, ask me.
-4. Write My assessment and Relevance to my question yourself.
+3. Select the table in the answer, copy it, and paste it into an empty sheet in Excel or Google Sheets. If everything lands in one column, ask me.
+4. Sort by Year and filter by Strand to compare the works. Empty cells show what you still need to read for.
+5. Write My assessment and Relevance to my question yourself.
 :::
+
+The matrix is your working file. The text and tables in your review you write and build yourself.
 
 ### Prompt B: from a list to a matrix {#prompt-b .unlisted}
 
@@ -157,62 +160,6 @@ I used [chat tool] to get an overview of the sub-field and a first list of candi
 ```
 
 Change it so it says what you actually did.
-
-## The tools {#tools}
-
-Three kinds of tool, three jobs: a chat tool for scoping the field, a citation database for confirming your references, and a map tool for how the works connect. Then Excel or Google Sheets for your literature matrix.
-
-::: {.basics}
-::: {#copilot .basic}
-#### [Chat]{} Copilot at UU
-
-"Students at Uppsala University have free access to the AI tool Copilot." Log in with your UU student account at [m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat).
-
-Do not enter sensitive or confidential information, or personal details.
-
-[UU: the AI tool for students](https://www.uu.se/en/students/it-for-students/software/ai-tool)
-:::
-
-::: {#scholar .basic}
-#### [Check]{} Google Scholar
-
-Free. Search for the title and see whether the work exists as the chat answer says. **Cited by** under each result gives its citation count. **Cite** shows the reference, ready to copy, for example into prompt B.
-
-[scholar.google.com](https://scholar.google.com)
-:::
-
-::: {#litmaps .basic}
-#### [Map]{} Litmaps
-
-Draws a map of how works cite each other, from 2 or 3 seed works. Make a **free account** (email, or Sign Up with Google). The free plan allows only one or two maps, so use one map.
-
-[app.litmaps.com](https://app.litmaps.com/)
-:::
-
-::: {#excel .basic}
-#### [Sort]{} Excel or Google Sheets
-
-Paste the table from Copilot into an empty sheet. Then sort by Year (Excel: Data, Sort) and filter by Strand or Method (Excel: Data, Filter) to compare the works. Google Sheets: Data, Sort range, and Data, Create a filter.
-:::
-:::
-
-## Downloads {#downloads}
-
-::: {.download}
-**Literature matrix template** (Excel). The columns, filters on, and a sheet "How to use".
-
-[Download .xlsx](downloads/literature-matrix-template.xlsx){.button}
-:::
-
-::: {.download}
-**Example matrix: criminal governance** (Excel). The demo topic, with eight real works filled in. My assessment and Relevance to my question stay empty, because those are yours.
-
-[Download example](downloads/literature-matrix-criminal-governance.xlsx){.button}
-:::
-
-The colours in the Excel files show who fills each column. Blue: the reference. Green: from your own notes, in your words. Orange: yours only, never AI.
-
-The matrix is your working file. The text and tables in your review you write and build yourself.
 
 ## AI guidelines {#rule}
 
