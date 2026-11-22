@@ -48,7 +48,7 @@ Tim Gåsste · Reviewing a Research Field (2FK052) · Uppsala University
 
 ![Start a new chat, paste the prompt, and send.](assets/howto/copilot-1-paste.png){fig-alt="Copilot with a new chat, the prompt pasted in the box, and the send button marked"}
 
-![The answer ends with a table of works. Search each title in Google Scholar.](assets/howto/copilot-2-answer.png){fig-alt="Copilot's answer: a table with the columns Strand, Authors, Year, and Title, the Title column marked"}
+![Part of the answer is a table of works. Search each title in Google Scholar.](assets/howto/copilot-2-answer.png){fig-alt="Copilot's answer: a table whose first columns are Strand, Authors, Year, and Title, the Title column marked, and an arrow to scroll right for more columns"}
 
 </details>
 
@@ -90,9 +90,9 @@ Rules:
 
 ![Search for your work by its title, and tick your 2 or 3 works. Then add them to one map.](assets/howto/litmaps-1-search.png){fig-alt="Litmaps search results with the search box and the tick boxes of two works marked"}
 
-![Your map: your works in the middle, suggestions in the blue ring.](assets/howto/litmaps-2-map.png){fig-alt="A Litmaps map with a work in the middle and a suggestion in the blue ring marked"}
+![Your map: your works are the dark dots, suggestions are the open circles in the blue ring.](assets/howto/litmaps-2-map.png){fig-alt="A Litmaps map with dark dots for the works on it, one marked, and an open circle in the blue ring marked"}
 
-![Click a suggestion to read about it, then Add to Litmap.](assets/howto/litmaps-3-add.png){fig-alt="Litmaps with a suggestion selected on the map and its Add to Litmap button marked"}
+![Click a suggestion to read about it, then Add to Litmap. Check it first, as in workflow 1: this one is a 1994 book review in Contemporary Sociology, not Gambetta's book itself.](assets/howto/litmaps-3-add.png){fig-alt="Litmaps with a suggestion selected on the map and its Add to Litmap button marked"}
 
 </details>
 
@@ -148,7 +148,7 @@ Done with workflows 1 to 3? Use AI to turn your own notes into a literature matr
 
 <details class="howto"><summary>Show me how</summary>
 
-![Copy the table from Copilot's answer, click cell A1 in an empty sheet, and paste.](assets/howto/excel-1-paste.png){fig-alt="Excel with the pasted table, cell A1 marked, and every column in its own column"}
+![Copy the table from Copilot's answer, click cell A1 in an empty sheet, and paste. Long text runs on over empty cells. Click a cell to see what it holds.](assets/howto/excel-1-paste.png){fig-alt="Excel with the pasted table, cell A1 marked, and every column in its own column"}
 
 </details>
 
