@@ -18,3 +18,4 @@ The build reads from the lecture folder this repository sits in (found through g
 The page loads nothing from other hosts: Work Sans is served from `assets/fonts/`, and the theme's web font import is switched off in `styles.scss`.
 
 Only audience-facing files belong in this repository.
+- `assets/howto/`: the screenshots under "Show me how", made by `scripts/make-howto.py` from Tim's own screenshots of UU Copilot, Excel, and his Litmaps map (22 Nov 2026) and one Litmaps search taken without a login. Cropped so no name or account shows. The source screenshots stay out of git (`../test-run/screenshots/`).

@@ -44,6 +44,14 @@ Tim Gåsste · Reviewing a Research Field (2FK052) · Uppsala University
 4. Drop every work you cannot find. Keep the checked works for your reading list.
 :::
 
+<details class="howto"><summary>Show me how</summary>
+
+![Start a new chat, paste the prompt, and send.](assets/howto/copilot-1-paste.png){fig-alt="Copilot with a new chat, the prompt pasted in the box, and the send button marked"}
+
+![The answer ends with a table of works. Search each title in Google Scholar.](assets/howto/copilot-2-answer.png){fig-alt="Copilot's answer: a table with the columns Strand, Authors, Year, and Title, the Title column marked"}
+
+</details>
+
 ### Prompt A: map the field and find candidate works {#prompt-a .unlisted}
 
 ```{.markdown .prompt}
@@ -77,6 +85,16 @@ Rules:
 3. Look at the map: older works that many others build on, and recent works that cite several of your seeds. Add the ones that sound relevant to your question.
 4. Check every new work as in [workflow 1](#workflow-1) before it goes on your reading list.
 :::
+
+<details class="howto"><summary>Show me how</summary>
+
+![Search for your work by its title, and tick your 2 or 3 works. Then add them to one map.](assets/howto/litmaps-1-search.png){fig-alt="Litmaps search results with the search box and the tick boxes of two works marked"}
+
+![Your map: your works in the middle, suggestions in the blue ring.](assets/howto/litmaps-2-map.png){fig-alt="A Litmaps map with a work in the middle and a suggestion in the blue ring marked"}
+
+![Click a suggestion to read about it, then Add to Litmap.](assets/howto/litmaps-3-add.png){fig-alt="Litmaps with a suggestion selected on the map and its Add to Litmap button marked"}
+
+</details>
 
 If you keep your references in a reference manager, Litmaps can also import them as a file.
 
@@ -127,6 +145,12 @@ Done with workflows 1 to 3? Use AI to turn your own notes into a literature matr
 4. Sort by Year and filter by Strand to compare the works (Excel: Data, Sort and Data, Filter. Google Sheets: Data, Sort range and Data, Create a filter). Empty cells show what you still need to read for.
 5. Write My assessment and Relevance to my question yourself.
 :::
+
+<details class="howto"><summary>Show me how</summary>
+
+![Copy the table from Copilot's answer, click cell A1 in an empty sheet, and paste.](assets/howto/excel-1-paste.png){fig-alt="Excel with the pasted table, cell A1 marked, and every column in its own column"}
+
+</details>
 
 The matrix is your working file. The text and tables in your review you write and build yourself.
 

@@ -76,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-5de16f5e46225c21e2daa90d340bf64f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5a3ef9d4774e575a558c1edbf361fdce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-69ed1a91e5d5b56ee2636c7a17d0eeaf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -178,6 +178,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Drop every work you cannot find. Keep the checked works for your reading list.</li>
 </ol>
 </div>
+<details class="howto">
+<summary>
+Show me how
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/howto/copilot-1-paste.png" class="img-fluid figure-img" alt="Copilot with a new chat, the prompt pasted in the box, and the send button marked"></p>
+<figcaption>Start a new chat, paste the prompt, and send.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/howto/copilot-2-answer.png" class="img-fluid figure-img" alt="Copilot's answer: a table with the columns Strand, Authors, Year, and Title, the Title column marked"></p>
+<figcaption>The answer ends with a table of works. Search each title in Google Scholar.</figcaption>
+</figure>
+</div>
+</details>
 <section id="prompt-a" class="level3 unlisted">
 <h3 class="unlisted anchored" data-anchor-id="prompt-a">Prompt A: map the field and find candidate works</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>I am writing an academic literature review based on peer-reviewed research. The goal is to find 12 to 15 works that cover the core of my sub-field: what the research knows and where it disagrees. Help me get an overview of the sub-field and find candidate works to read. I will check every work myself in a database and read it before I use it.</span>
@@ -211,6 +228,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Check every new work as in <a href="#workflow-1">workflow 1</a> before it goes on your reading list.</li>
 </ol>
 </div>
+<details class="howto">
+<summary>
+Show me how
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/howto/litmaps-1-search.png" class="img-fluid figure-img" alt="Litmaps search results with the search box and the tick boxes of two works marked"></p>
+<figcaption>Search for your work by its title, and tick your 2 or 3 works. Then add them to one map.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/howto/litmaps-2-map.png" class="img-fluid figure-img" alt="A Litmaps map with a work in the middle and a suggestion in the blue ring marked"></p>
+<figcaption>Your map: your works in the middle, suggestions in the blue ring.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/howto/litmaps-3-add.png" class="img-fluid figure-img" alt="Litmaps with a suggestion selected on the map and its Add to Litmap button marked"></p>
+<figcaption>Click a suggestion to read about it, then Add to Litmap.</figcaption>
+</figure>
+</div>
+</details>
 <p>If you keep your references in a reference manager, Litmaps can also import them as a file.</p>
 </section>
 <section id="workflow-3" class="level2">
@@ -221,7 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="steps">
 <ol type="1">
 <li>Fill in prompt C with the grading criteria (<a href="https://uppsala.instructure.com/courses/121481/pages/grading-criteria">Studium, Grading criteria</a>), your research question, and your paragraph.</li>
-<li>Run it in UU’s <a href="https://m365.cloud.microsoft/chat">Copilot</a>. UU says what you enter there stays protected and is not used to train the models.</li>
+<li>Run it in UU’s <a href="https://m365.cloud.microsoft/chat">Copilot</a>. <a href="https://www.uu.se/en/students/it-for-students/software/ai-tool">UU says</a> what you enter there stays protected and is not used to train the models.</li>
 <li>Read each question and decide which ones you act on. You write the changes yourself.</li>
 </ol>
 </div>
@@ -254,10 +294,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Copy prompt B and replace the two [brackets] with your references and your notes.</li>
 <li>Run it in <a href="https://m365.cloud.microsoft/chat">Copilot</a>.</li>
 <li>Select the table in the answer, copy it, and paste it into an empty sheet in Excel or Google Sheets. If everything lands in one column, ask me.</li>
-<li>Sort by Year and filter by Strand to compare the works. Empty cells show what you still need to read for.</li>
+<li>Sort by Year and filter by Strand to compare the works (Excel: Data, Sort and Data, Filter. Google Sheets: Data, Sort range and Data, Create a filter). Empty cells show what you still need to read for.</li>
 <li>Write My assessment and Relevance to my question yourself.</li>
 </ol>
 </div>
+<details class="howto">
+<summary>
+Show me how
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/howto/excel-1-paste.png" class="img-fluid figure-img" alt="Excel with the pasted table, cell A1 marked, and every column in its own column"></p>
+<figcaption>Copy the table from Copilot’s answer, click cell A1 in an empty sheet, and paste.</figcaption>
+</figure>
+</div>
+</details>
 <p>The matrix is your working file. The text and tables in your review you write and build yourself.</p>
 <section id="prompt-b" class="level3 unlisted">
 <h3 class="unlisted anchored" data-anchor-id="prompt-b">Prompt B: from a list to a matrix</h3>
