@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Literature matrix to print</title>
+<!-- Source of downloads/literature-matrix-print.pdf. Rebuild with scripts/make-print.sh.
+     Fonts come from ../assets/fonts (Work Sans, OFL), nothing from the web. -->
+<link rel="stylesheet" href="../assets/fonts.css">
+<style>
+  @page { size: A4 landscape; margin: 10mm; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { color: #111; font-family: "Work Sans", Arial, sans-serif; font-size: 9pt; }
+  .page { display: flex; flex-direction: column; height: 189mm; }
+  header { align-items: baseline; display: flex; gap: 8mm; margin-bottom: 3mm; }
+  h1 { font-size: 15pt; font-weight: 600; margin: 0; white-space: nowrap; }
+  .field { border-bottom: 0.3mm solid #888; flex: 1; font-size: 9pt; padding-bottom: 0.5mm; }
+  table { border-collapse: collapse; flex: 1; table-layout: fixed; width: 100%; }
+  th, td { border: 0.3mm solid #9a9a9a; }
+  th { font-size: 8.5pt; font-weight: 600; height: 11mm; line-height: 1.2; padding: 1.2mm 1.5mm; text-align: left; vertical-align: bottom; }
+  td { height: 19.5mm; }
+  .ref { background: #DDE6F0; }
+  .notes { background: #E6EFE0; }
+  .mine { background: #F6E3C8; }
+  th, .key span { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .key { align-items: center; display: flex; flex-wrap: nowrap; font-size: 8.5pt; gap: 5mm; margin-top: 2.5mm; }
+  .key span { border: 0.3mm solid #9a9a9a; display: inline-block; height: 3.2mm; margin-right: 1.5mm; vertical-align: -0.5mm; width: 6mm; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Literature matrix</h1>
+    <div class="field">My research question:</div>
+  </header>
+  <table>
+    <colgroup>
+      <col style="width: 10%"><col style="width: 15%"><col style="width: 9%"><col style="width: 9%">
+      <col style="width: 10%"><col style="width: 17%"><col style="width: 15%"><col style="width: 15%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th class="ref">Author and year</th>
+        <th class="ref">Title</th>
+        <th class="notes">Strand</th>
+        <th class="notes">Method</th>
+        <th class="notes">Data or cases</th>
+        <th class="notes">Main argument (my words)</th>
+        <th class="mine">My assessment</th>
+        <th class="mine">Relevance to my question</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="key">
+    <div><span class="ref"></span>Blue: the reference</div>
+    <div><span class="notes"></span>Green: from your own notes, in your words</div>
+    <div><span class="mine"></span>Orange: yours only, never AI</div>
+  </div>
+</div>
+</body>
+</html>

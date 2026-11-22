@@ -1,0 +1,14 @@
+.quarto/
+*_files/
+.DS_Store
+/.luarc.json
+**/*.quarto_ipynb
+# Build copies (deck export, matrix files); the published copies live in docs/
+/slides/
+/downloads/
+
+/.quarto/
+__pycache__/
+
+# Work notes stay local
+NOTE.md

@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+  resources:
+    - assets/
+    - downloads/
+    - slides/
+    - .nojekyll
+
+website:
+  title: "AI workshop · Reviewing a Research Field"
+  description: "Exercise steps, prompts, tools, and the literature matrix template for the AI workshop in Reviewing a Research Field (2FK052), Uppsala University, autumn 2026."
+  site-url: "https://timgasste.github.io/rrf-ai/"
+  page-navigation: false
+  reader-mode: false
+  search: false
+
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    css: assets/fonts.css
+    toc: true
+    toc-location: right
+    toc-title: "On this page"
+    toc-depth: 3
+    code-copy: true
+    code-overflow: wrap
+    highlight-style: github
+    anchor-sections: true
+    smooth-scroll: true
+    lang: en

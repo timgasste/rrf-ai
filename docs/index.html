@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>AI for Your Literature Review – AI workshop · Reviewing a Research Field</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-5de16f5e46225c21e2daa90d340bf64f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-dbc4f3bac55d3653f18f65b9cdd3c2e6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="assets/fonts.css">
+</head>
+
+<body class="quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#how" id="toc-how" class="nav-link active" data-scroll-target="#how">How the afternoon works</a></li>
+  <li><a href="#workflow-1" id="toc-workflow-1" class="nav-link" data-scroll-target="#workflow-1">1. Ask AI for core works, and check each one</a></li>
+  <li><a href="#workflow-2" id="toc-workflow-2" class="nav-link" data-scroll-target="#workflow-2">2. See how the works connect, in Litmaps</a></li>
+  <li><a href="#workflow-3" id="toc-workflow-3" class="nav-link" data-scroll-target="#workflow-3">3. Feedback on one paragraph of your own text</a></li>
+  <li><a href="#advanced" id="toc-advanced" class="nav-link" data-scroll-target="#advanced">More advanced</a>
+  <ul class="collapse">
+  <li><a href="#workflow-4" id="toc-workflow-4" class="nav-link" data-scroll-target="#workflow-4">4. A reading order for your checked list</a></li>
+  <li><a href="#workflow-5" id="toc-workflow-5" class="nav-link" data-scroll-target="#workflow-5">5. A literature matrix</a></li>
+  </ul></li>
+  <li><a href="#take-home" id="toc-take-home" class="nav-link" data-scroll-target="#take-home">At the end</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">The tools</a></li>
+  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
+  <li><a href="#rule" id="toc-rule" class="nav-link" data-scroll-target="#rule">The rule in short</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">AI for Your Literature Review</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="hero">
+<div class="kicker">
+<p>Workshop page</p>
+</div>
+<section id="ai-for-your-literature-review" class="level1">
+<h1>AI for <strong>Your Literature Review</strong></h1>
+<div class="lead">
+<p>The AI workshop on Monday 23 November, 13:15–15:00, on Zoom. Work down this page: five workflows, from the easiest to the most advanced, each with what you need and its steps, and a prompt to copy where it uses one. The tools, the downloads, and the course rule come at the end.</p>
+</div>
+<div class="byline">
+<p>Tim Gåsste · Reviewing a Research Field (2FK052), autumn 2026 · Department of Peace and Conflict Research, Uppsala University</p>
+</div>
+<div class="jump">
+<p><a href="#how" class="primary">How it works</a> <a href="#workflow-1">Workflow 1</a> <a href="#workflow-2">Workflow 2</a> <a href="#workflow-3">Workflow 3</a> <a href="#advanced">More advanced</a> <a href="#tools">Tools</a> <a href="#downloads">Downloads</a> <a href="#rule">The rule</a> <a href="#slides">Slides</a></p>
+</div>
+</section>
+</div>
+<div class="idea">
+<p><strong>AI finds and sorts. You read and judge.</strong></p>
+</div>
+<div class="notice">
+<p><strong>Important:</strong> the course’s <a href="https://uppsala.instructure.com/courses/121481/pages/ai-guidelines">AI guidelines</a> apply to everything on this page. AI may help you search for literature and sort it. Which works you include, how you compare and evaluate them, the research gap you identify, and the text, slides, and figures you submit are your own work. See <a href="#rule">The rule in short</a>.</p>
+</div>
+<section id="how" class="level2">
+<h2 class="anchored" data-anchor-id="how">How the afternoon works</h2>
+<p>First I show you each workflow. After the break you work on your own literature, at your own pace, with this page open. Start with workflows 1 and 2. Ask me whenever you are stuck or want me to look at what you found.</p>
+</section>
+<section id="workflow-1" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-1">1. Ask AI for core works, and check each one</h2>
+<div class="need">
+<p><strong>You need:</strong> your sub-field and your research question, one sentence each, and 2 or 3 works you already have. Pen and paper are enough to write down the works you check and their “Cited by” numbers.</p>
+</div>
+<div class="steps">
+<ol type="1">
+<li>Copy prompt A and replace each [bracket] with your own words.</li>
+<li>Paste it into <a href="https://m365.cloud.microsoft/chat">Copilot</a> (log in with your UU student account) or into the chat tool you use.</li>
+<li>Pick the works that look useful for your question. Search each title in <a href="#scholar">Google Scholar</a>: does the work exist as the answer says? Write down its “Cited by” number.</li>
+<li>Drop every work you cannot find. Keep 5 to 10 checked works for your reading list.</li>
+</ol>
+</div>
+<section id="prompt-a" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="prompt-a">Prompt A: map the field and find candidate works</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>I am a master's student in peace and conflict studies. For a course, I am writing a literature review of one sub-field: what the research knows, where it disagrees, and what is still missing. Help me get an overview of the sub-field and find candidate works to read. I will check every work myself in a database and read it before I use it.</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>My sub-field: <span class="co">[</span><span class="ot">your sub-field, in one sentence</span><span class="co">]</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>My research question: <span class="co">[</span><span class="ot">your question, in one sentence</span><span class="co">]</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Works I already have: <span class="co">[</span><span class="ot">2 or 3 works: author, year, title</span><span class="co">]</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Please:</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Name the 3 to 5 main strands or debates in this sub-field, with one or two sentences on each.</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>For each strand, list 2 or 3 foundational works and 2 or 3 influential recent works (from the last ten years).</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>For each work, give the authors, year, title, journal or publisher, the DOI if it has one, one line on why it matters for my question, and how sure you are that the reference is correct (sure, fairly sure, or not sure).</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Rules:</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Never invent a reference. If you are not sure a work exists, write "not sure" and give me search terms to find it instead.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Do not rank the works by citations and do not guess citation counts. I take those from a database.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Prefer peer-reviewed journal articles and academic books.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Show the result as one table with the columns: Strand, Authors, Year, Title, Journal or publisher, DOI, Why it matters, How sure.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<details class="why">
+<summary>
+Why each part is there
+</summary>
+<ul>
+<li><strong>Who you are and what the review is:</strong> the model pitches the answer at the right level and looks for debates, not only for facts.</li>
+<li><strong>Your sub-field, question, and works:</strong> the more concrete, the closer the works. Your own works anchor the search in the right literature.</li>
+<li><strong>Strands first:</strong> you get a first map of the field before the list. Check it against your reading. How you structure your review is yours.</li>
+<li><strong>How sure:</strong> chat models also produce references that look right and do not exist. The column tells you where to check first, but you check every one.</li>
+<li><strong>No citation counts:</strong> chat models guess them. Google Scholar or OpenAlex count them.</li>
+<li><strong>One table:</strong> easy to check line by line, and easy to move into your matrix later.</li>
+</ul>
+</details>
+</section>
+</section>
+<section id="workflow-2" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-2">2. See how the works connect, in Litmaps</h2>
+<div class="need">
+<p><strong>You need:</strong> a free <a href="#litmaps">Litmaps</a> account, and 2 or 3 works you know or have checked.</p>
+</div>
+<div class="steps">
+<ol type="1">
+<li>Log in at <a href="https://app.litmaps.com/">app.litmaps.com</a> and search for one of your works by its title or DOI.</li>
+<li>Add your 2 or 3 works to one map as seeds, the works the map starts from.</li>
+<li>Look at the map: older works that many others build on, and recent works that cite several of your seeds. Add the ones that sound relevant to your question.</li>
+<li>Check every new work as in <a href="#workflow-1">workflow 1</a> before it goes on your reading list.</li>
+</ol>
+</div>
+<p>If you keep your references in a reference manager, Litmaps can also import them as a file.</p>
+</section>
+<section id="workflow-3" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-3">3. Feedback on one paragraph of your own text</h2>
+<div class="need">
+<p><strong>You need:</strong> one paragraph from your Description of a Research Field, your research question, and the grading criteria from Studium.</p>
+</div>
+<div class="steps">
+<ol type="1">
+<li>Fill in prompt C with the grading criteria (<a href="https://uppsala.instructure.com/courses/121481/pages/grading-criteria">Studium, Grading criteria</a>), your research question, and your paragraph.</li>
+<li>Run it in UU’s <a href="https://m365.cloud.microsoft/chat">Copilot</a>. UU says what you enter there stays protected and is not used to train the models.</li>
+<li>Read each question and decide which ones you act on. You write the changes yourself.</li>
+</ol>
+</div>
+<p><strong>Your own text only, never a peer’s.</strong></p>
+<section id="prompt-c" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="prompt-c">Prompt C: feedback on my own text</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>I am writing a literature review for a master's course in peace and conflict studies. Below is one paragraph that I wrote myself, and the criteria the course uses to assess it.</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Give me feedback as questions and short comments only. Do not rewrite my text, and do not suggest new sentences or wording. I decide what to change, and I write the changes myself.</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>Look for:</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>claims that are unclear, or that no work backs up,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>places where I describe works one by one instead of comparing them,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>perspectives or debates that the paragraph leaves out,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>whether the paragraph serves my research question.</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>The course criteria: <span class="co">[</span><span class="ot">paste the grading criteria from Studium</span><span class="co">]</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>My research question: <span class="co">[</span><span class="ot">your question</span><span class="co">]</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>My paragraph: <span class="co">[</span><span class="ot">paste one paragraph of your own text</span><span class="co">]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<details class="why">
+<summary>
+Why each part is there
+</summary>
+<ul>
+<li><strong>Your own paragraph only:</strong> never a peer’s text, and never your peer feedback (course rule).</li>
+<li><strong>Questions, no rewrite:</strong> the tool may point out weaknesses, you decide and write the changes (course rule). Your text stays yours.</li>
+<li><strong>The criteria:</strong> the feedback then asks what your teachers will ask: identify, contrast, critically evaluate, structure.</li>
+<li><strong>One paragraph:</strong> short enough to read every comment and decide on each.</li>
+</ul>
+</details>
+</section>
+</section>
+<section id="advanced" class="level2">
+<h2 class="anchored" data-anchor-id="advanced">More advanced</h2>
+<section id="workflow-4" class="level3">
+<h3 class="anchored" data-anchor-id="workflow-4">4. A reading order for your checked list</h3>
+<div class="need">
+<p><strong>You need:</strong> 5 to 10 works you checked in one database, each with its citation count and one line from your notes or the abstract.</p>
+</div>
+<div class="steps">
+<ol type="1">
+<li>Fill in prompt A2 with your checked list and run it.</li>
+<li>Use the four groups to decide what to read first. Whether a work goes into your review you decide after reading it.</li>
+</ol>
+</div>
+<section id="prompt-a2" class="level4 unlisted">
+<h4 class="unlisted anchored" data-anchor-id="prompt-a2">Prompt A2: a reading order for my checked list</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Below is my shortlist of works on <span class="co">[</span><span class="ot">your sub-field</span><span class="co">]</span>. I checked each work in <span class="co">[</span><span class="ot">Google Scholar or OpenAlex</span><span class="co">]</span> and wrote down its year and its citation count from that database.</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>My research question: <span class="co">[</span><span class="ot">your question</span><span class="co">]</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>My shortlist (author, year, title, citations, and one line from my notes or the abstract):</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">paste your checked shortlist</span><span class="co">]</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>Please sort the list into a reading order and give one line of reason for each work:</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Central works: the ones many others build on.</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Bridges: works that connect two strands or debates.</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Recent and rising: works from the last five years with many citations per year (citations divided by the years since publication).</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Closest to my question: the works that speak most directly to my research question.</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>Put a work in a group only when you can give the reason from what I pasted, and say when you cannot tell. Use only the works on my list and only the citation numbers I gave you. Do not tell me which works to include in my review. I decide that after reading them.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<details class="why">
+<summary>
+Why each part is there
+</summary>
+<ul>
+<li><strong>Your checked list and your numbers:</strong> the model sorts what you verified, so nothing invented enters, and the counts come from one database.</li>
+<li><strong>Citations per year:</strong> a recent work cannot have as many citations as a classic. Per year it can be compared.</li>
+<li><strong>One line per work:</strong> the model sorts from what you give it. Titles alone make every work look like a bridge.</li>
+<li><strong>Four groups:</strong> “most important” means different things. Central, bridging, rising, and closest to your question are four different reasons to read a work.</li>
+<li><strong>A reading order, not a selection:</strong> which works go into your review is your judgment, after reading. That is the course rule.</li>
+</ul>
+</details>
+</section>
+</section>
+<section id="workflow-5" class="level3">
+<h3 class="anchored" data-anchor-id="workflow-5">5. A literature matrix</h3>
+<div class="need">
+<p><strong>You need:</strong> your works and your notes on them.</p>
+</div>
+<p><strong>The simple way:</strong></p>
+<div class="steps">
+<ol type="1">
+<li>Print the <a href="downloads/literature-matrix-print.pdf">matrix sheet</a>, or open the <a href="downloads/literature-matrix-template.xlsx">matrix template</a> on your computer.</li>
+<li>Fill in one row per work, from your references and your notes.</li>
+<li>Which cells are still empty? That is what you still need to read for.</li>
+<li>Write My assessment and Relevance to my question yourself.</li>
+</ol>
+</div>
+<p><strong>If you are used to Excel or Google Sheets,</strong> prompt B can turn your references and notes into the table:</p>
+<div class="steps">
+<ol type="1">
+<li>Download the <a href="downloads/literature-matrix-template.xlsx">matrix template</a>.</li>
+<li>Paste your references and your notes into prompt B and run it.</li>
+<li>Save the answer as a <code>.csv</code> file, as <a href="#save-csv">shown below the prompt</a>. In Excel, open it with Data, From Text/CSV. In Google Sheets, use File, Import.</li>
+<li>Sort by year and filter by strand or method. Which cells are still empty? That is what you still need to read for.</li>
+<li>Write My assessment and Relevance to my question yourself.</li>
+</ol>
+</div>
+<section id="prompt-b" class="level4 unlisted">
+<h4 class="unlisted anchored" data-anchor-id="prompt-b">Prompt B: from a list to a matrix</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Turn my references and notes below into a table for a literature matrix.</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Use these columns, in this order: Author, Year, Title, Journal or publisher, DOI, Strand, Method, Data or cases, Main argument (my words), My assessment, Relevance to my question.</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>Rules:</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fill Author, Year, Title, Journal or publisher, and DOI from my references, in one consistent style (APA 7), using only what I pasted. Do not look anything up and do not add what is missing.</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fill Strand, Method, Data or cases, and Main argument only from my notes, in my words. If my notes say nothing, leave the cell empty.</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Leave My assessment and Relevance to my question empty. I write them myself.</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add no works and no information that is not in what I pasted.</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Give the table as CSV with a header row, in one code block, so I can save it as a .csv file and open it in Excel.</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>My references:</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">paste your references, for example copied from Google Scholar's "Cite"</span><span class="co">]</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>My notes:</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">paste your notes, one block per work</span><span class="co">]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<details class="why">
+<summary>
+Why each part is there
+</summary>
+<ul>
+<li><strong>Fixed columns:</strong> every work is described the same way, so you can sort and filter by strand, method, or cases and see the patterns across works.</li>
+<li><strong>Only what you pasted:</strong> the model formats, it does not add. An empty cell shows you what you still need to read for.</li>
+<li><strong>The last two columns stay yours:</strong> your assessment and the work’s relevance are the analysis the course grades.</li>
+<li><strong>CSV:</strong> opens in Excel or Google Sheets as columns. In Excel, use Data, From Text/CSV, so the columns split right on any computer.</li>
+</ul>
+</details>
+<div id="save-csv" class="word-tip">
+<p><strong>Saving the answer as <code>.csv</code>:</strong> copy the code block from the answer, paste it into a plain text editor (Notepad on Windows, or TextEdit on a Mac after Format, Make Plain Text), and save it with the ending <code>.csv</code>. To keep the template’s colours, copy the rows under the header into its Matrix sheet.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="take-home" class="level2">
+<h2 class="anchored" data-anchor-id="take-home">At the end</h2>
+<p>One sentence for your workflow description. The course asks you to state which AI tools you used and what for, or that you used none. An example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>I used <span class="co">[</span><span class="ot">chat tool</span><span class="co">]</span> to get an overview of the sub-field and a first list of candidate works, checked each work and its citation count in Google Scholar, and used <span class="co">[</span><span class="ot">map tool</span><span class="co">]</span> to see how the works connect. I read every work in this review myself. I used <span class="co">[</span><span class="ot">chat tool</span><span class="co">]</span> to turn my notes into a table and to get questions on one paragraph of my description, and I wrote all changes myself.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Change it so it says what you actually did. If you ran prompt A2, add that the tool sorted your checked list into a reading order.</p>
+<p>Take home: your checked reading list, your map, your feedback questions, and, if you got that far, your reading order and your matrix.</p>
+</section>
+<section id="tools" class="level2">
+<h2 class="anchored" data-anchor-id="tools">The tools</h2>
+<p>Three kinds of tool, each for what it does well: a chat tool for the overview and candidate works, a citation database for whether a work exists and how often it is cited, and a map tool for how the works connect. Then a literature matrix, on paper or in Excel or Google Sheets, to compare what you found.</p>
+<div class="basics">
+<div id="copilot" class="basic">
+<section id="chat-copilot-at-uu" class="level4">
+<h4 class="anchored" data-anchor-id="chat-copilot-at-uu"><span>Chat</span> Copilot at UU</h4>
+<p>“Students at Uppsala University have free access to the AI tool Copilot.” Log in with your UU student account at <a href="https://m365.cloud.microsoft/chat">m365.cloud.microsoft/chat</a>.</p>
+<ul>
+<li>UU says that what you enter remains protected, that chat data is not saved, and that no data is used to train the models.</li>
+<li>UU’s version allows 30 responses per conversation. Start a new chat when you reach the limit.</li>
+<li>Do not enter sensitive or confidential information, or personal details.</li>
+</ul>
+<p><a href="https://www.uu.se/en/students/it-for-students/software/ai-tool">UU: the AI tool for students</a></p>
+</section>
+</div>
+<div id="scholar" class="basic">
+<section id="check-google-scholar" class="level4">
+<h4 class="anchored" data-anchor-id="check-google-scholar"><span>Check</span> Google Scholar</h4>
+<p>Free. Search for the title and see whether the work exists as the chat answer says. <strong>Cited by</strong> under each result gives its citation count. <strong>Cite</strong> under a result shows the reference in several styles, ready to copy, for example into prompt B.</p>
+<ul>
+<li>Counts differ between databases, because each one counts from its own data. Compare counts within one database, never across.</li>
+<li>For a recent work, divide its citations by the years since publication. Then it can be compared with a classic.</li>
+</ul>
+<p><a href="https://scholar.google.com">scholar.google.com</a></p>
+</section>
+</div>
+<div id="litmaps" class="basic">
+<section id="map-litmaps" class="level4">
+<h4 class="anchored" data-anchor-id="map-litmaps"><span>Map</span> Litmaps</h4>
+<p>Draws a map of how works cite each other, from 2 or 3 seed works. Make a <strong>free account</strong> (email, or Sign Up with Google). Without one, Litmaps may use only one of your seeds.</p>
+<ul>
+<li>The free plan allows only one or two maps, so use one map today.</li>
+<li>Keep the map as a picture for your own overview: the screenshot icon at the bottom right, then <strong>Export Figure</strong>. The picture is not for your review or your slides.</li>
+</ul>
+<p>ResearchRabbit and Connected Papers do similar things. We use Litmaps as one example of what such tools do.</p>
+<p><a href="https://app.litmaps.com/">app.litmaps.com</a> · <a href="https://www.litmaps.com/pricing">Free and Pro plans</a></p>
+</section>
+</div>
+<div id="excel" class="basic">
+<section id="sort-excel-or-google-sheets" class="level4">
+<h4 class="anchored" data-anchor-id="sort-excel-or-google-sheets"><span>Sort</span> Excel or Google Sheets</h4>
+<p>Open a <code>.csv</code> file through the menu, not by double-clicking it. A double-click uses your computer’s default settings, so all the columns can end up in one.</p>
+<ul>
+<li><strong>Excel on Windows:</strong> Data tab, <strong>From Text/CSV</strong>, pick the file, Import, check that Delimiter is Comma, then <strong>Load</strong>. On a Mac the menus can differ.</li>
+<li><strong>Letters like å, ä, ö look wrong?</strong> Set File Origin to Unicode (UTF-8) in the same window.</li>
+<li><strong>Google Sheets:</strong> File, Import.</li>
+</ul>
+<p><a href="https://support.microsoft.com/en-us/office/import-or-export-text-txt-or-csv-files-5250ac4c-663c-47ce-937b-339e391393ba">Microsoft: import text or CSV files</a></p>
+</section>
+</div>
+</div>
+<p><strong>More from UU:</strong> the library’s guide <a href="https://libguides-en.ub.uu.se/searching/ai">Search using AI</a> (“If you plan to reference the work, first read it in its original form.”), and the student page <a href="https://www.uu.se/en/students/it-for-students/generative-ai-and-studies">Generative AI and studies</a>.</p>
+</section>
+<section id="downloads" class="level2">
+<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
+<div class="download">
+<p><strong>Literature matrix to print</strong> (PDF). One A4 page in landscape with the columns and empty rows, to fill in by hand.</p>
+<p><a href="downloads/literature-matrix-print.pdf" class="button">Download PDF</a></p>
+</div>
+<div class="download">
+<p><strong>Literature matrix template</strong> (Excel). The columns, filters on, and a sheet “How to use”.</p>
+<p><a href="downloads/literature-matrix-template.xlsx" class="button">Download .xlsx</a></p>
+</div>
+<div class="download">
+<p><strong>Literature matrix template</strong> (CSV). The header row only, for Google Sheets or any other program.</p>
+<p><a href="downloads/literature-matrix-template.csv" class="button">Download .csv</a></p>
+</div>
+<div class="download">
+<p><strong>Example matrix: criminal governance</strong> (Excel). The demo topic, with eight real works filled in. My assessment and Relevance to my question stay empty, because those are yours.</p>
+<p><a href="downloads/literature-matrix-criminal-governance.xlsx" class="button">Download example</a></p>
+</div>
+<p>The colours in the Excel files and on the printed sheet show who fills each column. Blue: the reference, from Google Scholar, or from AI if it only formats what you pasted. Green: from your own notes, in your words. Orange: yours only, never AI.</p>
+<p>The matrix is your working file. The text and tables in your review you write and build yourself.</p>
+</section>
+<section id="rule" class="level2">
+<h2 class="anchored" data-anchor-id="rule">The rule in short</h2>
+<p>AI may help you find and sort the literature. Reading it, judging it, and writing about it are yours. From the course’s <a href="https://uppsala.instructure.com/courses/121481/pages/ai-guidelines">AI guidelines</a> in Studium:</p>
+<blockquote class="blockquote">
+<p>You may not:</p>
+<ul>
+<li>submit or present text, slides, or figures that an AI tool has produced for you, in whole or in part. Checking the spelling and grammar of your own sentences is fine.</li>
+<li>let an AI tool do your analysis. You may use AI tools to search for literature, but deciding which works to include, comparing and critically evaluating them, and identifying the research gap must be your own work. An AI tool may point out weaknesses in your draft, but you decide what to change and you write the changes yourself.</li>
+<li>include a work in your review that you have not read yourself</li>
+<li>use AI tools for your peer feedback, even to check its language, or upload a peer’s draft to an AI tool (see <a href="https://uppsala.instructure.com/courses/121481/assignments/408911">Peer feedback</a>)</li>
+</ul>
+<p><strong>You are responsible for everything you submit.</strong> In the workflow description of your written assignments, state which AI tools you used and what you used them for, or that you used none. Be prepared to explain your work and your choices orally, in the tutoring sessions or when we ask.</p>
+</blockquote>
+<p>The guidelines also link the <a href="https://www.uu.se/en/students/department/peace-and-conflict-research/ai-and-teaching-policies-and-guidelines">DPCR guidelines related to AI tools</a>. When in doubt, ask before you hand in.</p>
+</section>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<div class="slides-card">
+<p><a href="slides/index.html"><strong>Open the slides</strong> Interactive version in your browser</a></p>
+<p><a href="downloads/rrf-ai-workshop-slides.pdf"><strong>Download the PDF</strong> Static, searchable version for reading and notes</a></p>
+</div>
+<div class="small">
+<p>Questions or corrections: <a href="mailto:tim.gasste@pcr.uu.se">tim.gasste@pcr.uu.se</a>.</p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/timgasste\.github\.io\/rrf-ai\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
