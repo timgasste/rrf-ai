@@ -88,7 +88,7 @@ If you keep your references in a reference manager, Litmaps can also import them
 
 ::: {.steps}
 1. Fill in prompt C with the grading criteria ([Studium, Grading criteria](https://uppsala.instructure.com/courses/121481/pages/grading-criteria)), your research question, and your paragraph.
-2. Run it in UU's [Copilot](https://m365.cloud.microsoft/chat). UU says what you enter there stays protected and is not used to train the models.
+2. Run it in UU's [Copilot](https://m365.cloud.microsoft/chat). [UU says](https://www.uu.se/en/students/it-for-students/software/ai-tool) what you enter there stays protected and is not used to train the models.
 3. Read each question and decide which ones you act on. You write the changes yourself.
 :::
 
@@ -124,7 +124,7 @@ Done with workflows 1 to 3? Use AI to turn your own notes into a literature matr
 1. Copy prompt B and replace the two [brackets] with your references and your notes.
 2. Run it in [Copilot](https://m365.cloud.microsoft/chat).
 3. Select the table in the answer, copy it, and paste it into an empty sheet in Excel or Google Sheets. If everything lands in one column, ask me.
-4. Sort by Year and filter by Strand to compare the works. Empty cells show what you still need to read for.
+4. Sort by Year and filter by Strand to compare the works (Excel: Data, Sort and Data, Filter. Google Sheets: Data, Sort range and Data, Create a filter). Empty cells show what you still need to read for.
 5. Write My assessment and Relevance to my question yourself.
 :::
 
