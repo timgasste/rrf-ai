@@ -11,15 +11,15 @@ Workshop page
 # AI for <strong>your literature review</strong>
 
 ::: {.lead}
-The AI workshop on Monday 23 November, 13:15–15:00, on Zoom. Work down this page from the top: four workflows, from the easiest to the most advanced, each with what you need, its steps, and a prompt to copy where it uses one. The tools, the downloads, and the AI guidelines come at the end.
+Four workflows, from the easiest to the most advanced. Work down the page from the top.
 :::
 
 ::: {.byline}
-Tim Gåsste · Reviewing a Research Field (2FK052), autumn 2026 · Department of Peace and Conflict Research, Uppsala University
+Tim Gåsste · Reviewing a Research Field (2FK052) · Uppsala University
 :::
 
 ::: {.jump}
-[This session](#how){.primary} [Workflow 1](#workflow-1) [Workflow 2](#workflow-2) [Workflow 3](#workflow-3) [Workflow 4](#workflow-4) [Tools](#tools) [Downloads](#downloads) [AI guidelines](#rule) [Slides](#slides)
+[Workflow 1](#workflow-1){.primary} [Workflow 2](#workflow-2) [Workflow 3](#workflow-3) [Workflow 4](#workflow-4) [Tools](#tools) [Downloads](#downloads) [AI guidelines](#rule) [Slides](#slides)
 :::
 :::
 
@@ -28,12 +28,8 @@ Tim Gåsste · Reviewing a Research Field (2FK052), autumn 2026 · Department of
 :::
 
 ::: {.notice}
-**Important:** the course's [AI guidelines](https://uppsala.instructure.com/courses/121481/pages/ai-guidelines) apply to everything on this page. AI may help you search for literature and sort it. Which works you include, how you compare and evaluate them, the research gap you identify, and the text, slides, and figures you submit are your own work. See [AI guidelines](#rule) near the end of this page.
+**Important:** the course's [AI guidelines](#rule) apply to everything on this page.
 :::
-
-## The structure of this session {#how}
-
-First I show you each workflow. After the break you work on your own literature, at your own pace, with this page open. Start with workflows 1 and 2. Ask me whenever you are stuck or want me to look at what you found.
 
 ## 1. Ask AI for core works, and check each one {#workflow-1}
 
@@ -68,18 +64,6 @@ Rules:
 - Never invent a reference. If you are not sure a work exists, say so.
 - Show the works as one table with the columns: Strand, Authors, Year, Title, Journal or publisher, DOI, Main argument, Method and cases, Why it matters.
 ```
-
-<details class="why"><summary>Why each part is there</summary>
-
-- **The goal:** the model looks for the core of your sub-field, not for everything written on it.
-- **Your sub-field, question, and works:** the more concrete, the closer the works. Your own works anchor the search in the right literature.
-- **Strands and where they disagree:** a first map of the field before the list. Check it against your reading. Comparing the works and structuring your review are yours.
-- **Argument, method, and cases:** help you pick what to read first. They are the model's guess until you have read the work, and your matrix takes them from your own notes.
-- **Search terms:** to find more in Google Scholar yourself.
-- **Peer-reviewed only, nothing invented:** chat models also produce references that look right and do not exist. Check every one.
-- **One table:** easy to check line by line.
-
-</details>
 
 ## 2. See how the works connect, in Litmaps {#workflow-2}
 
@@ -128,15 +112,6 @@ My research question: [your question]
 My paragraph: [paste one paragraph of your own text]
 ```
 
-<details class="why"><summary>Why each part is there</summary>
-
-- **Your own paragraph only:** never a peer's text, and never your peer feedback (course rule).
-- **Questions, no rewrite:** the tool may point out weaknesses, you decide and write the changes (course rule). Your text stays yours.
-- **The criteria:** the feedback then asks what your teachers will ask: identify, contrast, critically evaluate, structure.
-- **One paragraph:** short enough to read every comment and decide on each.
-
-</details>
-
 ## 4. More advanced: your own literature matrix, with AI {#workflow-4}
 
 Done with workflows 1 to 3? Use AI to turn your own notes into a literature matrix: one row per work, so you can compare the works side by side.
@@ -173,15 +148,6 @@ My notes:
 [paste your notes, one block per work]
 ```
 
-<details class="why"><summary>Why each part is there</summary>
-
-- **Fixed columns:** every work is described the same way, so you can sort and filter by strand, method, or cases and see the patterns across works.
-- **Only what you pasted:** the model formats, it does not add. An empty cell shows you what you still need to read for.
-- **The last two columns stay yours:** your assessment and the work's relevance are the analysis the course grades.
-- **One table:** you can copy it into Excel or Google Sheets.
-
-</details>
-
 ## Your workflow description {#take-home}
 
 The course asks you to state which AI tools you used and what for, or that you used none. An example:
@@ -202,19 +168,13 @@ Three kinds of tool, three jobs: a chat tool for scoping the field, a citation d
 
 "Students at Uppsala University have free access to the AI tool Copilot." Log in with your UU student account at [m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat).
 
-- UU says that what you enter remains protected, that chat data is not saved, and that no data is used to train the models.
-- UU's version allows 30 responses per conversation. Start a new chat when you reach the limit.
-- Do not enter sensitive or confidential information, or personal details.
-
-[UU: the AI tool for students](https://www.uu.se/en/students/it-for-students/software/ai-tool)
+Do not enter sensitive or confidential information, or personal details.
 :::
 
 ::: {#scholar .basic}
 #### [Check]{} Google Scholar
 
-Free. Search for the title and see whether the work exists as the chat answer says. **Cited by** under each result gives its citation count. **Cite** under a result shows the reference in several styles, ready to copy, for example into prompt B.
-
-- Counts differ between databases, because each one counts from its own data. Compare counts within one database, never across.
+Free. Search for the title and see whether the work exists as the chat answer says. **Cited by** under each result gives its citation count. **Cite** shows the reference, ready to copy, for example into prompt B.
 
 [scholar.google.com](https://scholar.google.com)
 :::
@@ -222,36 +182,19 @@ Free. Search for the title and see whether the work exists as the chat answer sa
 ::: {#litmaps .basic}
 #### [Map]{} Litmaps
 
-Draws a map of how works cite each other, from 2 or 3 seed works. Make a **free account** (email, or Sign Up with Google). Without one, Litmaps may use only one of your seeds.
+Draws a map of how works cite each other, from 2 or 3 seed works. Make a **free account** (email, or Sign Up with Google). The free plan allows only one or two maps, so use one map.
 
-- The free plan allows only one or two maps, so use one map today.
-- Keep the map as a picture for your own overview: the screenshot icon at the bottom right, then **Export Figure**. The picture is not for your review or your slides.
-
-ResearchRabbit and Connected Papers do similar things. We use Litmaps as one example of what such tools do.
-
-[app.litmaps.com](https://app.litmaps.com/) · [Free and Pro plans](https://www.litmaps.com/pricing)
+[app.litmaps.com](https://app.litmaps.com/)
 :::
 
 ::: {#excel .basic}
 #### [Sort]{} Excel or Google Sheets
 
-Paste the table from Copilot into an empty sheet. Then sort and filter to compare the works.
-
-- **Excel:** Data, Sort, by Year, to see how the field developed. Data, Filter, then the arrow in a header such as Strand or Method.
-- **Google Sheets:** Data, Sort range, and Data, Create a filter.
-- **The template:** same columns as prompt B, with the colours and filters ready.
+Paste the table from Copilot into an empty sheet. Then sort by Year (Excel: Data, Sort) and filter by Strand or Method (Excel: Data, Filter) to compare the works.
 :::
 :::
-
-**More from UU:** the library's guide [Search using AI](https://libguides-en.ub.uu.se/searching/ai) ("If you plan to reference the work, first read it in its original form."), and the student page [Generative AI and studies](https://www.uu.se/en/students/it-for-students/generative-ai-and-studies).
 
 ## Downloads {#downloads}
-
-::: {.download}
-**Literature matrix to print** (PDF). One A4 page in landscape with the columns and empty rows, to fill in by hand.
-
-[Download PDF](downloads/literature-matrix-print.pdf){.button}
-:::
 
 ::: {.download}
 **Literature matrix template** (Excel). The columns, filters on, and a sheet "How to use".
@@ -265,9 +208,7 @@ Paste the table from Copilot into an empty sheet. Then sort and filter to compar
 [Download example](downloads/literature-matrix-criminal-governance.xlsx){.button}
 :::
 
-The colours in the Excel files and on the printed sheet show who fills each column. Blue: the reference, from Google Scholar, or from AI if it only formats what you pasted. Green: from your own notes, in your words. Orange: yours only, never AI.
-
-The matrix is your working file. The text and tables in your review you write and build yourself.
+The colours show who fills each column. Blue: the reference. Green: from your own notes, in your words. Orange: yours only, never AI.
 
 ## AI guidelines {#rule}
 
@@ -282,7 +223,7 @@ AI may help you find and sort the literature. Reading it, judging it, and writin
 >
 > **You are responsible for everything you submit.** In the workflow description of your written assignments, state which AI tools you used and what you used them for, or that you used none. Be prepared to explain your work and your choices orally, in the tutoring sessions or when we ask.
 
-The guidelines also link the [DPCR guidelines related to AI tools](https://www.uu.se/en/students/department/peace-and-conflict-research/ai-and-teaching-policies-and-guidelines). When in doubt, ask before you hand in.
+When in doubt, ask before you hand in.
 
 ## Slides {#slides}
 
