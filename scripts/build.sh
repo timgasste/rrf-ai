@@ -18,8 +18,8 @@ PDF_NAME="rrf-ai-workshop-slides.pdf"
 META=()
 mkdir -p "$ROOT/slides" "$ROOT/downloads"
 
-# The matrix files: the page links all three, so the build stops without them.
-for f in literature-matrix-template.xlsx literature-matrix-template.csv literature-matrix-criminal-governance.xlsx
+# The matrix files: the page links both, so the build stops without them.
+for f in literature-matrix-template.xlsx literature-matrix-criminal-governance.xlsx
 do
   if [[ -f "$LECTURE/demo/$f" ]]
   then

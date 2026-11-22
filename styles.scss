@@ -34,7 +34,8 @@ h3 { margin-top: 1.8rem; }
 .hero .byline { color: #555; font-size: 0.95rem; }
 
 .jump { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.2rem 0 0.4rem; }
-.jump a { background: #fff; border: 2px solid var(--uu-red); border-radius: 999px; color: var(--uu-red); font-weight: 650; padding: 0.35rem 0.95rem; text-decoration: none; }
+.jump p { display: flex; flex-wrap: wrap; gap: 0.5rem 0.6rem; margin: 0; }
+.jump a { background: #fff; border: 2px solid var(--uu-red); border-radius: 999px; color: var(--uu-red); font-weight: 650; padding: 0.35rem 0.95rem; text-decoration: none; white-space: nowrap; }
 .jump a.primary { background: var(--uu-red); color: #fff; }
 .jump a:hover { background: var(--uu-red); color: #fff; }
 
