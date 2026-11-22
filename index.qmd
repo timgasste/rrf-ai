@@ -169,6 +169,8 @@ Three kinds of tool, three jobs: a chat tool for scoping the field, a citation d
 "Students at Uppsala University have free access to the AI tool Copilot." Log in with your UU student account at [m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat).
 
 Do not enter sensitive or confidential information, or personal details.
+
+[UU: the AI tool for students](https://www.uu.se/en/students/it-for-students/software/ai-tool)
 :::
 
 ::: {#scholar .basic}
@@ -190,7 +192,7 @@ Draws a map of how works cite each other, from 2 or 3 seed works. Make a **free 
 ::: {#excel .basic}
 #### [Sort]{} Excel or Google Sheets
 
-Paste the table from Copilot into an empty sheet. Then sort by Year (Excel: Data, Sort) and filter by Strand or Method (Excel: Data, Filter) to compare the works.
+Paste the table from Copilot into an empty sheet. Then sort by Year (Excel: Data, Sort) and filter by Strand or Method (Excel: Data, Filter) to compare the works. Google Sheets: Data, Sort range, and Data, Create a filter.
 :::
 :::
 
@@ -208,7 +210,9 @@ Paste the table from Copilot into an empty sheet. Then sort by Year (Excel: Data
 [Download example](downloads/literature-matrix-criminal-governance.xlsx){.button}
 :::
 
-The colours show who fills each column. Blue: the reference. Green: from your own notes, in your words. Orange: yours only, never AI.
+The colours in the Excel files show who fills each column. Blue: the reference. Green: from your own notes, in your words. Orange: yours only, never AI.
+
+The matrix is your working file. The text and tables in your review you write and build yourself.
 
 ## AI guidelines {#rule}
 

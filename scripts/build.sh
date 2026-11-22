@@ -31,12 +31,8 @@ do
   fi
 done
 
-# The matrix sheet to print, made by scripts/make-print.sh from print/.
-PRINT="$ROOT/print/literature-matrix-print.pdf"
-[[ -f "$PRINT" ]] || { echo "Stopped: no $PRINT. Run scripts/make-print.sh." >&2; exit 1; }
-[[ "$PRINT" -ot "$ROOT/print/literature-matrix-print.html" ]] && \
-  echo "Warning: the print PDF is older than its HTML. Run scripts/make-print.sh." >&2
-cp "$PRINT" "$ROOT/downloads/literature-matrix-print.pdf"
+# The matrix sheet to print (print/, scripts/make-print.sh) is no longer published (Tim, 22 Nov: the page stays bare).
+rm -f "$ROOT/downloads/literature-matrix-print.pdf"
 
 # The prompts must equal prompts.md word for word.
 if [[ -f "$LECTURE/prompts.md" ]]
