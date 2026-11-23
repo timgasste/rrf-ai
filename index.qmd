@@ -106,11 +106,11 @@ If you keep your references in a reference manager, Litmaps can also import them
 
 ::: {.steps}
 1. Fill in prompt C with the grading criteria ([Studium, Grading criteria](https://uppsala.instructure.com/courses/121481/pages/grading-criteria)), your research question, and your paragraph.
-2. Run it in UU's [Copilot](https://m365.cloud.microsoft/chat). [UU says](https://www.uu.se/en/students/it-for-students/software/ai-tool) what you enter there stays protected and is not used to train the models.
+2. Run it in UU's [Copilot](https://m365.cloud.microsoft/chat).
 3. Read each question and decide which ones you act on. You write the changes yourself.
 :::
 
-**Your own text only, never a peer's.**
+**[UU says](https://www.uu.se/en/students/it-for-students/software/ai-tool) its Copilot keeps what you enter within the university, but that does not make every use allowed.** Paste only your own paragraph, never a peer's draft, and nothing sensitive, confidential, or personal ([UU's advice](https://www.uu.se/en/students/it-for-students/generative-ai-and-studies)).
 
 ### Prompt C: feedback on my own text {#prompt-c .unlisted}
 
@@ -198,7 +198,7 @@ AI may help you find and sort the literature. Reading it, judging it, and writin
 >
 > **You are responsible for everything you submit.** In the workflow description of your written assignments, state which AI tools you used and what you used them for, or that you used none. Be prepared to explain your work and your choices orally, in the tutoring sessions or when we ask.
 
-When in doubt, ask before you hand in.
+Using UU's Copilot does not change these rules. When in doubt, ask before you hand in.
 
 ## Slides {#slides}
 
