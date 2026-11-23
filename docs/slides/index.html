@@ -1865,12 +1865,31 @@ text-underline-offset: 3px;
 .reveal .slides section.day-slide .day-step { min-height: 0; }
 
 .reveal #title-slide .title-link {
-margin: 1.5em auto 0 auto;
-font-size: 0.56em;
-line-height: 1.35;
-color: var(--uu-black);
+align-self: center;
+background: var(--uu-light);
+border: 1px solid var(--uu-border-soft);
+border-radius: 16px;
+margin: 1.05em auto 0 auto;
+padding: 0.45em 1.3em 0.5em 1.3em;
+width: fit-content;
 }
-.reveal #title-slide .title-link a { font-weight: 600; }
+.reveal #title-slide .title-link p { color: inherit; font-size: inherit; line-height: inherit; margin: 0; }
+.reveal #title-slide .title-link-label { color: var(--uu-black); font-size: 0.6em; line-height: 1.3; }
+.reveal #title-slide .title-link-url { font-size: 1.02em; font-weight: 650; line-height: 1.25; }
+.reveal #title-slide .title-meta { margin-top: 1.05em; }
+
+.reveal .slides section.demo-slide--rows .demo-rows { display: grid; gap: 24px; grid-auto-rows: 1fr; }
+.reveal .slides section.demo-slide--rows .demo-row > .demo-step { align-self: stretch; }
+.reveal .slides section.demo-slide--rows .demo-row {
+align-items: center;
+display: grid;
+gap: 34px;
+grid-template-columns: 112px minmax(0, 1fr);
+}
+.reveal .slides section.demo-slide--rows .demo-icon svg { display: block; height: auto; width: 100%; }
+.reveal .slides section.demo-slide--rows .demo-step { padding: 0.8em 1.1em; }
+.reveal .slides section.demo-slide--rows .demo-text { font-size: 0.56em; }
+.reveal .slides section.demo-slide--rows .demo-tool { font-size: 0.58em; }
 </style>
   <style type="text/css">.reveal
 div.sourceCode
@@ -2376,6 +2395,14 @@ margin-right: 0; }
 <div class="subtitle">
 <p>Reviewing a Research Field: AI workshop</p>
 </div>
+<div class="title-link">
+<div class="title-link-label">
+<p>Material and in-depth instructions for this workshop</p>
+</div>
+<div class="title-link-url">
+<p><a href="https://timgasste.github.io/rrf-ai/">timgasste.github.io/rrf-ai</a></p>
+</div>
+</div>
 <div class="title-meta">
 <div class="module-course">
 <p></p>
@@ -2389,9 +2416,6 @@ margin-right: 0; }
 <div class="title-university">
 <p>Uppsala University</p>
 </div>
-</div>
-<div class="title-link">
-<p>Material and in-depth instructions for this workshop:<br><a href="https://timgasste.github.io/rrf-ai/">timgasste.github.io/rrf-ai</a></p>
 </div>
 <!-- PREAMBLE STOPS HERE -->
 </section>
@@ -2427,29 +2451,29 @@ margin-right: 0; }
 <h2>The structure of this session</h2>
 <div class="ws-body">
 <div class="day-row">
-<div class="day-step">
+<div class="day-step fragment" data-fragment-index="1">
 <div class="day-text">
 <p><strong>I show you</strong> four workflows</p>
 </div>
 </div>
-<div class="day-step day-step--break">
+<div class="day-step day-step--break fragment" data-fragment-index="2">
 <div class="day-text">
 <p><strong>Break</strong>, 10 minutes</p>
 </div>
 </div>
-<div class="day-step day-step--you">
+<div class="day-step day-step--you fragment" data-fragment-index="3">
 <div class="day-text">
 <p><strong>You work</strong> on your own literature, with the page. I help.</p>
 </div>
 </div>
-<div class="day-step">
+<div class="day-step fragment" data-fragment-index="4">
 <div class="day-text">
 <p><strong>Round-up</strong> and questions</p>
 </div>
 </div>
 </div>
 </div>
-<div class="ws-foot">
+<div class="ws-foot fragment" data-fragment-index="4">
 <p>Start with workflows 1 and 2. <strong>Ask me whenever you are stuck</strong> or want me to look at what you found.</p>
 </div>
 </section>
@@ -2474,7 +2498,7 @@ margin-right: 0; }
 <h2>Check your references</h2>
 <div class="ws-body">
 <div class="hook-grid">
-<div class="hook-side">
+<div class="hook-side fragment">
 <div class="hook-label">
 <p>A chat model, from memory, on criminal governance</p>
 </div>
@@ -2603,19 +2627,19 @@ margin-right: 0; }
 <p>The full prompt and the steps are on the workshop page: timgasste.github.io/rrf-ai</p>
 </div>
 </section>
-<section id="demo-1" class="slide level2 ws-slide demo-slide">
+<section id="demo-1" class="slide level2 ws-slide demo-slide demo-slide--rows">
 <h2>Scope, confirm, and refine</h2>
 <div class="ws-body">
-<div class="demo-grid">
-<div class="demo-art">
-<svg viewbox="0 0 200 160" role="img" aria-label="A browser window">
-  <rect x="6" y="10" width="188" height="140" rx="14" fill="#ffffff" stroke="#3f6fb5" stroke-width="5" />
-  <path d="M6 44h188" stroke="#3f6fb5" stroke-width="5" />
-  <circle cx="28" cy="27" r="6" fill="#A63A4F"></circle><circle cx="48" cy="27" r="6" fill="#f2c94c"></circle><circle cx="68" cy="27" r="6" fill="#31a352"></circle>
-  <rect x="26" y="64" width="100" height="10" rx="5" fill="#d8d8d8" /><rect x="26" y="86" width="148" height="10" rx="5" fill="#d8d8d8" /><rect x="26" y="108" width="120" height="10" rx="5" fill="#d8d8d8" />
+<div class="demo-rows">
+<div class="demo-row fragment">
+<div class="demo-icon">
+<svg viewbox="0 0 120 100" role="img" aria-label="A chat with an AI tool">
+  <path d="M16 12 H92 A12 12 0 0 1 104 24 V62 A12 12 0 0 1 92 74 H46 L26 92 V74 H16 A12 12 0 0 1 4 62 V24 A12 12 0 0 1 16 12 Z" fill="#ffffff" stroke="#3f6fb5" stroke-width="5" stroke-linejoin="round" />
+  <rect x="18" y="31" width="52" height="8" rx="4" fill="#d8d8d8" />
+  <rect x="18" y="47" width="70" height="8" rx="4" fill="#d8d8d8" />
+  <path d="M104 2 L108.5 13.5 L120 18 L108.5 22.5 L104 34 L99.5 22.5 L88 18 L99.5 13.5 Z" fill="#f2c94c" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" />
 </svg>
 </div>
-<div class="demo-steps">
 <div class="demo-step">
 <div class="demo-tool">
 <p>Copilot</p>
@@ -2624,6 +2648,19 @@ margin-right: 0; }
 <p><strong>Prompt A</strong> on criminal governance, how criminal groups rule the communities where they operate.</p>
 </div>
 </div>
+</div>
+<div class="demo-row fragment">
+<div class="demo-icon">
+<svg viewbox="0 0 120 100" role="img" aria-label="A magnifying glass over a work">
+  <rect x="8" y="4" width="64" height="86" rx="8" fill="#ffffff" stroke="#3f6fb5" stroke-width="5" />
+  <rect x="19" y="19" width="42" height="7" rx="3.5" fill="#d8d8d8" />
+  <rect x="19" y="33" width="30" height="7" rx="3.5" fill="#d8d8d8" />
+  <rect x="19" y="47" width="36" height="7" rx="3.5" fill="#d8d8d8" />
+  <circle cx="72" cy="58" r="22" fill="#ffffff" stroke="#A63A4F" stroke-width="6"></circle>
+  <path d="M88 74 L108 94" stroke="#A63A4F" stroke-width="10" stroke-linecap="round" />
+  <path d="M62 58 L69 65 L82 51" stroke="#31a352" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
 <div class="demo-step">
 <div class="demo-tool">
 <p>Google Scholar</p>
@@ -2631,6 +2668,20 @@ margin-right: 0; }
 <div class="demo-text">
 <p><strong>Check two works:</strong> does the work exist as the answer says? Note its “Cited by”.</p>
 </div>
+</div>
+</div>
+<div class="demo-row fragment">
+<div class="demo-icon">
+<svg viewbox="0 0 120 100" role="img" aria-label="A reading list: two works kept, one dropped">
+  <rect x="12" y="4" width="96" height="92" rx="10" fill="#ffffff" stroke="#3f6fb5" stroke-width="5" />
+  <path d="M25 25 L31 31 L42 19" stroke="#31a352" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="52" y="21" width="44" height="8" rx="4" fill="#d8d8d8" />
+  <path d="M27 43 L40 56 M40 43 L27 56" stroke="#A63A4F" stroke-width="5.5" stroke-linecap="round" />
+  <rect x="52" y="45.5" width="44" height="8" rx="4" fill="#ecd3d8" />
+  <path d="M49 49.5 H99" stroke="#A63A4F" stroke-width="3" stroke-linecap="round" />
+  <path d="M25 75 L31 81 L42 69" stroke="#31a352" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="52" y="71" width="44" height="8" rx="4" fill="#d8d8d8" />
+</svg>
 </div>
 <div class="demo-step">
 <div class="demo-tool">
